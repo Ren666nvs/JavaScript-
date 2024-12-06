@@ -441,3 +441,47 @@ console.log(A); //garalt(garsan toog hurvuulne)
 //${} - tuhain hesegt huvisagch esvel ilerhiileliig oruulahad ashigladag
 // jishee - let name = "John";
 // console.log(Hello, ${name}!`); // "Hello, John!"
+//bodlogo-48
+let too52 = "9; 15";
+let [N, M] = input.split("", "").map(Number);
+let = B = 15 / 5;
+console.log(B);
+
+//bodlogo-49
+let too55 = "23453 3";
+let [number, digit] = too55.split(" ");
+let count = 0;
+for (let char of number) {
+  if (char === digit) {
+    count++;
+  }
+}
+console.log(count);
+//bodlogo-50
+let scores = [40, 50, 92, 50, 40];
+let students = [];
+for (let i = 0; i < scores.length; i++) {
+  students.push({ score: scores[i], id: i + 1 });
+}
+for (let i = 0; i < students.length - 1; i++) {
+  for (let j = i + 1; j < students.length; j++) {
+    if (
+      students[i].score < students[j].score &&
+      students[i].id > students[j].id
+    ) {
+      let temp = students[i];
+      students[i] = students[j];
+      students[j] = temp;
+    }
+  }
+}
+for (let student of students) {
+  console.log(student.id);
+}
+//bodlogo-51
+let too53 = 123321;
+if (unen > 123 || unen < 321) {
+  console.log("Yes");
+}
+//bodlogo-52
+let = 5,2,3,4,1,7,
