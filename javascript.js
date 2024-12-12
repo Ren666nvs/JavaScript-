@@ -484,4 +484,134 @@ if (unen > 123 || unen < 321) {
   console.log("Yes");
 }
 //bodlogo-52
-let = 5,2,3,4,1,7,
+let = [5, 2, 3, 4, 1, 7];
+let data = input.split(",").map(Number).slice(1);
+let oddCount = data.filter((num) => num % 2 !== 0);
+let evenCount = data.filter((num) => num % 2 === 0);
+console.log(oddCount > evenCount ? "YES " : "NO");
+
+//bodlogo-53
+
+// const too56 = 4;
+
+// let too57 = 1;
+function bodlogo53(too56, too57) {
+  for (let i = 1; i <= 3; i++) {
+    too57 *= too56 + i;
+  }
+  too57 /= 6;
+  console.log(too57);
+
+  return {
+    too56,
+    too57,
+  };
+}
+
+console.log(bodlogo53(4, 1));
+
+// //bodlogo-54
+
+const inp = "3 5";
+const [a, b] = inp.split(" ").map(Number);
+
+let sum = 1;
+let power = 1;
+
+for (let i = 1; i <= b; i++) {
+  power *= a;
+  sum += power;
+}
+
+console.log(sum);
+//bodlogo-55
+let i = "A n d";
+let letters = i.split(" ");
+
+let upperCaseLetters = letters.map((letter) => letter.toUpperCase());
+
+let r = upperCaseLetters.join(" ");
+console.log(r);
+
+function PrimeNumber(n) {
+  for (let i = 2; i < n2; i++) {
+    if (n % i == 0) return "no";
+  }
+  return "yes";
+}
+console.log(PrimeNumber(6));
+
+let too58 = 10;
+let too59 = 0;
+for (let i = 1; i <= too58; i++) {
+  too59 += i;
+}
+console.log("too59", too59);
+//
+let too60 = 5;
+let too61 = 0;
+for (let i = 1; i <= too60; i++) {
+  too61;
+}
+console.log(too61);
+
+//
+const n6 = 5;
+
+const sumOfSquares = (n6 * (n6 + 1) * (2 * n6 + 1)) / 6;
+
+console.log(sumOfSquares);
+//
+
+// let email = "bat.a@gmail.com"; // A.Bat
+// let [username] = input.split("@");
+// let parts = username.split(".");
+// let output = `${parts[1][0].toUpperCase()}.${parts[0][0].toUpperCase()}${parts[0].slice(1)}`;
+// console.log(output);
+// function formatEmail(email) {
+//   let username = email.split("@")[0];
+//   let parts = username.split(".");
+//   if (parts.length < 2) {
+//     return "A.Bat";
+//   }
+//   let firstName = parts[1][0].toUpperCase() + parts[1].slice(1);
+//   let lastName = parts[0][0].toUpperCase() + parts[0].slice(1);
+//   return firstName + "." + lastName;
+// }
+// let in1 = "bat.a@gmail.com";
+// let re1 = formatEmail(input);
+// console.log(re1);
+// bodlogo mid
+let email = "bat.a@gmail.com";
+function formatNamee(firstName, lastName) {
+  let name =
+    lastName[0].toUpperCase() +
+    lastName.slice(1) +
+    "." +
+    firstName[0].toUpperCase() +
+    firstName.slice(1);
+  return name;
+}
+function fullname(email) {
+  let username = email.split("@")[0];
+  let nameParts = username.split(".");
+
+  if (nameParts.length === 2) {
+    let formatName = formatNamee(nameParts[0], nameParts[1]);
+    return formatName;
+  } else {
+    return "ygd ch bgn";
+  }
+}
+console.log(fullname(email));
+
+// Math.exp:
+
+// Логарифмын үр дүнг эргүүлж тоо болгон буцаахын тулд экспоненциал функц (ex
+// ашиглана.
+// Math.round:
+// Бага зэргийн хөвөгч цэгийн алдааг засахын тулд хариуг бүхэл тоо руу ойртуулна.
+  
+let x1 = 5
+ x1 = Math.round(x1)
+console.log(x1);
